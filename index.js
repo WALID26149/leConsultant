@@ -1,13 +1,38 @@
+const header = document.querySelector('.header');
+const scrolle = document.querySelector('.scrolle')
 const navBtn = document.querySelector('.nav-btn');
 const closeBtn = document.querySelector('.closeModalBtn');
 const contactModal = document.querySelector('.contact-model');
 const overlay = document.querySelector('.overlay');
 const navMobile = document.querySelector('.toggle-button');
-// const ul = document.querySelector('nav ul');
+const randomImg = document.querySelector('.slide-1 img');
+const nav = document.querySelector('nav');
+const ul = document.querySelector('nav ul');
+const li = document.querySelectorAll('nav .ul li');
+
+//show random imgs
+function showImage() {
+  const arr = [
+    "https://img.freepik.com/free-photo/workplace-results-professional-report-accounting-during_1418-61.jpg",
+    "https://oneplusbusinessandtax.com/wp-content/uploads/bb-plugin/cache/business-consulting-metrics-panorama.jpg",
+    "https://businessyield.com/wp-content/uploads/2019/11/Business-consultant.png"
+  ]
+  const random = Math.floor(Math.random() * 3);
+  randomImg.src = arr[random];
+}
+
+setInterval(showImage, 2000);
+
 
 // make nav responsive
 navMobile.addEventListener('click', () => {
-  
+  // navMobile.style.display = "none";
+  ul.style.display = "flex";
+  ul.style.flexDirection = "column";
+  nav.style.flexDirection = "column";
+  nav.style.alignItems = "flexStart";
+  nav.style.backgroundColor = "#f5f5f5";
+  li.style.padding = "10px 0";
 })
 // open and close model
 navBtn.addEventListener('click', function() {
@@ -80,5 +105,15 @@ document.querySelectorAll('.a-link').forEach(function (el) {
     e.preventDefault();
     const id = this.getAttribute('href');
     document.querySelector(id).scrollIntoView({behavior: 'smooth'})
+  });
+});
+
+// scrlle btn to the top
+scrolle.addEventListener('click', function (e) {
+  const s1coords = header.getBoundingClientRect();
+  window.scrollTo({
+    left: s1coords.left + window.pageXOffset,
+    top: s1coords.top + window.pageYOffset,
+    behavior: 'smooth',
   });
 });

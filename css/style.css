@@ -108,6 +108,7 @@ nav .toggle-button{
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 1s;
 }
 .nav-img{
   height: 100px
@@ -128,7 +129,6 @@ nav .toggle-button{
 .slider{
   /* margin: 20px 12%; */
   /* position: absolute; */
-  z-index: 10;
   overflow: hidden;
   transition: transform 1s;
 }
@@ -169,7 +169,7 @@ nav .toggle-button{
   background-color: #222222;
   padding: 10px 10px;
   margin:100px auto;
-  width: 65%;
+  width: 910px;
   height: 250px;
   border-radius: 10px;
 }
@@ -354,6 +354,24 @@ nav .toggle-button{
   font-size:15px;
   color:#aaa;
 }
+/* scrolle btn */
+.scrolle-btn{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 20px;
+  right: 30px
+}
+.scrolle{
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 35px;
+  background-color: #0081C9;
+  color: #fff;
+  cursor: pointer;
+}
 
 /* media responsive */
 @media (max-width:1360px) {
@@ -367,11 +385,26 @@ nav .toggle-button{
     padding: 2% 4%
   }
 }
+@media (max-width:950px) {
+  .info{
+    height: auto;
+    width: 370px
+  }
+  .img-info{
+    margin: 0;
+    float: none;
+  }
+  .inputs, .h1-info{
+    padding-top: 0;
+    text-align: center;
+  }
+  .company-name, .email-input{
+    width: 29%
+  }
+}
 @media (max-width:830px){
   nav{
     padding: 4% 6%;
-    /* flex-direction: column;
-    align-items: flex-start; */
   }
   nav ul{
     display: none;
@@ -431,20 +464,22 @@ nav .toggle-button{
     height: 84rem;
   }
   .heading h1{
-    font-size: 51px;
+    font-size: 45px;
   }
   .social{
     display: block;
     padding: 5px 0
   }
   .work{
-    width: 285px;
+    top: 455px;
+    width: 235px;
   }
   .info{
     height: auto;
     width: 89%
   }
   .info img{
+    width: 100%;
     float: none;
   }
   .inputs{
@@ -454,6 +489,22 @@ nav .toggle-button{
     text-align: center;
   }
   .company-name, .email-input{
-    width: 29.5%;
+    width: 26.5%;
+  }
+  .service h1{
+    font-size: 37px;
+  }
+  .slide img{
+    margin: 0;
+    width: 100%
+  }
+  .slide-2 img ,.slide-3 img{
+    display: none
+  }
+  .scrolle-btn{
+    left: 288px
+  }
+  .scrolle{
+    font-size: 45px
   }
 }
