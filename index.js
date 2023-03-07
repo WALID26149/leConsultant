@@ -4,11 +4,7 @@ const navBtn = document.querySelector('.nav-btn');
 const closeBtn = document.querySelector('.closeModalBtn');
 const contactModal = document.querySelector('.contact-model');
 const overlay = document.querySelector('.overlay');
-const navMobile = document.querySelector('.toggle-button');
 const randomImg = document.querySelector('.slide-1 img');
-const nav = document.querySelector('nav');
-const ul = document.querySelector('nav ul');
-const li = document.querySelectorAll('nav .ul li');
 
 //show random imgs
 function showImage() {
@@ -23,17 +19,6 @@ function showImage() {
 
 setInterval(showImage, 2000);
 
-
-// make nav responsive
-navMobile.addEventListener('click', () => {
-  // navMobile.style.display = "none";
-  ul.style.display = "flex";
-  ul.style.flexDirection = "column";
-  nav.style.flexDirection = "column";
-  nav.style.alignItems = "flexStart";
-  nav.style.backgroundColor = "#f5f5f5";
-  li.style.padding = "10px 0";
-})
 // open and close model
 navBtn.addEventListener('click', function() {
   contactModal.classList.remove('hidden');

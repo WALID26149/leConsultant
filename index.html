@@ -14,18 +14,21 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav>
-          <i class="lni lni-consulting"></i>
-          <h2 class="h2-nav">LeConsultant</h2>
-          <a class="toggle-button" href="#"><i class="lni lni-menu"></i></a>
-          <!-- menu -->
-            <ul class="ul">
-              <li><a class="a-link" href="#home">Home</a></li>
-              <li><a class="a-link" href="#Aboutme">About me</a></li>
-              <li><a class="a-link" href="#Service">Request & Service</a></li>
-              <li><a class="a-link" href="#footer">Footer</a></li>
-              <button class="nav-btn" type="button" name="button">CONTACT US</button>
-            </ul>
+        <!-- navbar  -->
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <i class="lni lni-consulting"></i>
+            <a class="a-nav" href="#">LeConsultant</a>
+          </div>
+          <input type="checkbox" id="navbar-toggle">
+          <label for="navbar-toggle" class="navbar-toggle-label">&#9776;</label>
+          <ul class="navbar-menu">
+            <li><a class="a-link" href="#">Home</a></li>
+            <li><a class="a-link" href="#Aboutme">About</a></li>
+            <li><a class="a-link" href="#Service">Services</a></li>
+            <li><a class="a-link" href="#footer">Footer</a></li>
+            <button class="nav-btn" type="button" name="button">CONTACT US</button>
+          </ul>
         </nav>
         <!-- toggle class info section -->
       <div class="contact-model info hidden">
