@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
   border: 0;
   font-size: 3rem;
   position: absolute;
-  top: 17.2rem;
+  top: 1.2rem;
   right: 0.5rem;
   color: #fff;
   cursor: pointer;
@@ -64,8 +64,7 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   display: flex;
   justify-content: space-between;
-/*   align-items: center; */
-  padding: 2rem 4rem;
+  padding: 3rem 3rem 0;
 }
 
 .navbar-brand {
@@ -95,7 +94,7 @@ body::-webkit-scrollbar-thumb {
 .navbar-menu a {
   display: block;
   padding:0 1.5rem;
-  color: #000;
+  color: grey;
   text-align: center;
   text-decoration: none;
 }
@@ -187,11 +186,8 @@ body::-webkit-scrollbar-thumb {
 }
 .info{
   background-color: #222222;
-  padding: 10px 10px;
-  margin:100px auto;
-  width: 910px;
-  height: 250px;
-  border-radius: 10px;
+  padding: 10px 12%;
+  height: 350px;
 }
 .img-info{
   height: 250px;
@@ -296,8 +292,6 @@ body::-webkit-scrollbar-thumb {
   display: inline-flex;
   transition: transform 1s;
   position: absolute;
-  /* display: grid;
-  grid-template-columns: auto auto auto; */
 }
 .request-services p{
   color: grey;
@@ -306,72 +300,195 @@ body::-webkit-scrollbar-thumb {
 .request-services h2{
   color:#fff
 }
-.contact-heading{
-  text-align: center;
-  margin: 150px 0 20px;
+.experience{
+  margin: 200px 12%
 }
-.contact-heading > p{
-  color: #0081C9
+.experience > p{
+  color: #0081C9;
+
 }
 /* experience section */
 .paragraph{
-  background-color: #0081C9;
   width: 60%;
-  border-radius: 10px;
-  margin: auto;
 }
 .paragraph > p{
-  color: #fff;
   letter-spacing: 1.5px;
   line-height: 1.5;
-  padding: 20px
+  font-size: 20px
 }
 /* social-media links */
 .social{
-  display: flex;
   background-color: #222222;
-  margin: 100px 0;
+  margin: 100px 0 0 0;
+  padding: 30px 12%
 }
-.row{
-  margin: 50px;
-  padding: 20px;
-  background-color: #0081C9;
-  border-radius: 5px
+.social > p{
+  color: #0081C9;
 }
-.row-img{
-  height: 60px;
-  border-radius: 50%
-}
-.row h2{
+.social > h1{
   color: #fff;
-}
-.row p{
-  color: #ddd;
-  line-height: 1.5;
-}
-.row-link{
-  color: #fff;
-  font-size: 25px;
-}
-.row-link:hover{
-  color: #f5f5f5;
+  font-size: 70px;
+  width: 60%;
+  margin: 0
 }
 /* style the footer */
-.footer{
-   background-color: #222222;
+.footer-distributed{
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
 }
-.p-footer{
-    padding: 15px 50px;
-    margin: 0;
-    color: #fff;
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  grey;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #000;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
 /* copyright */
 .copyright {
-  padding:10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size:15px;
+  padding:15px 0;
   color:#aaa;
 }
 /* scrolle btn */
@@ -412,11 +529,11 @@ body::-webkit-scrollbar-thumb {
 @media (max-width:950px) {
   .info{
     height: auto;
-    width: 370px
   }
   .img-info{
     margin: 0;
     float: none;
+    width: 100%
   }
   .inputs, .h1-info{
     padding-top: 0;
@@ -424,6 +541,9 @@ body::-webkit-scrollbar-thumb {
   }
   .company-name, .email-input{
     width: 29%
+  }
+  .closeModalBtn{
+    top: 17.2rem;
   }
 }
 @media (max-width:835px){
@@ -473,15 +593,35 @@ body::-webkit-scrollbar-thumb {
   .icon-slide{
     bottom: 270px;
   }
-  .social{
-    display: block;
-    padding: 10px 0
-  }
+  .footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
 }
 @media (min-width:320px) and (max-width:480px){
+  .navbar{
+    padding: 2rem 3rem
+  }
+  .req-slider{
+    height: 31rem;
+    position: relative;
+    overflow: hidden;
+  }
   .icon-slide{
     top: 10px;
-    left: 50px;
+    margin-left: 110px;
     display: block;
   }
   .principles{
@@ -492,15 +632,23 @@ body::-webkit-scrollbar-thumb {
   }
   .social{
     display: block;
-    padding: 5px 0
+    padding: 5px 12%
+  }
+  .social h1{
+    font-size: 62px
+  }
+  .experience{
+    text-align: center;
+  }
+  .paragraph{
+    width: auto;
   }
   .work{
     top: 455px;
     width: 235px;
   }
   .info{
-    height: auto;
-    width: 89%
+    padding: 10px 11%
   }
   .info img{
     width: 100%;
@@ -527,8 +675,18 @@ body::-webkit-scrollbar-thumb {
   }
   .scrolle-btn{
     right: auto;
+    left: 21%
   }
   .scrolle{
     font-size: 45px
+  }
+  .contact-model{
+    top: auto;
+    left: 0.7%;
+    transform: translate(0);
+  }
+  .closeModalBtn{
+    top: 17.2rem;
+    right: 0.5rem;
   }
 }

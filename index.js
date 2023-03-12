@@ -19,6 +19,11 @@ function showImage() {
 
 setInterval(showImage, 2000);
 
+if (document.maxWidth = "600px") {
+    randomImg.src = "https://img.freepik.com/free-photo/workplace-results-professional-report-accounting-during_1418-61.jpg";
+}
+
+
 // open and close model
 navBtn.addEventListener('click', function() {
   contactModal.classList.remove('hidden');

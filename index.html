@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header class="header" id="home">
         <!-- navbar  -->
         <nav class="navbar">
           <div class="navbar-brand">
@@ -21,7 +21,7 @@
             <a class="a-nav" href="#">LeConsultant</a>
           </div>
           <input type="checkbox" id="navbar-toggle">
-          <label for="navbar-toggle" class="navbar-toggle-label">&#9776;</label>
+          <label for="navbar-toggle" class="navbar-toggle-label"><i class="lni lni-menu"></i></label>
           <ul class="navbar-menu">
             <li><a class="a-link" href="#">Home</a></li>
             <li><a class="a-link" href="#Aboutme">About</a></li>
@@ -101,100 +101,102 @@
             <i class="slider-btn-left lni lni-arrow-left"></i>
             <i class="slider-btn-right lni lni-arrow-right"></i>
           </div>
-        <div class="request-services one"  style="transform: translateX(0%);">
-          <div class="columns">
-            <div class="col-1 col">
-              <p>/01</p>
-              <div class="col-img">
-                <img src="image\undrawGoingUp.png" alt="img">
-              </div>
-              <h2>Active Directory</h2>
-              <p>Active Directory (AD) is a database and set of services that connect users
-                with the network resources they need to get their work done.</p>
-            </div>
-            <!-- col-2 -->
-            <div class="col-2 col">
-              <p>/02</p>
-              <div class="col-img">
-                <img src="image\undrawPerforma.png" alt="img">
-              </div>
-              <h2>Exchange Servicing</h2>
-              <p>Exchange Service is a traditional marketing term used to refer to a service
-                offered to end users which provides the end user
-                 with a telephonic connection.</p>
-            </div>
-            <!-- col-3 -->
-            <div class="col-3 col">
-              <p>/03</p>
-              <div class="col-img">
-                <img src="image/undrawCloudHosting.png" alt="img">
-              </div>
-              <h2>Microsoft Azure</h2>
-              <p>Azure's cloud service gives IT departments access to a large number of resources
-                 that they would not normally have with an on-premises data center.</p>
-            </div>
-          </div>
-          </div>
-          <!-- ////////////// -->
-          <div class="request-services two"  style="transform: translateX(100%);">
-            <div class="columns">
-              <div class="col-1 col">
-                <p>/04</p>
-                <div class="col-img">
-                  <img src="image\undrawSlider.png" alt="img">
-                </div>
-                <h2>Private Cloud</h2>
-                <p>One of the main benefits of deploying a private cloud is the increased degree of control afforded to the organization . Since the private cloud is only available to one company.</p>
-              </div>
-              <!-- col-2 -->
-              <div class="col-2 col">
-                <p>/05</p>
-                <div class="col-img">
-                  <img src="image\undrawVisionary.png" alt="img">
-                </div>
-                <h2>Virtualization Hyper-v</h2>
-                <p>VMware's Virtual Machine File System (VMFS) holds a slight edge when it comes to clustering. Hyper-V uses a single memory technique called “Dynamic Memory.” Using the dynamic memory settings.</p>
-              </div>
-              <!-- col-3 -->
-              <div class="col-3 col">
-                <p>/06</p>
-                <div class="col-img">
-                  <img src="image/undraw.png" alt="img">
-                </div>
-                <h2>Sharepoint Servicing</h2>
-                <p>Organizations use Microsoft SharePoint to create websites . You can use it as a secure place to store, organize, share, and access information from any device. All you need is a web browser.</p>
-              </div>
-            </div>
-            </div>
-            <!-- //////////////// -->
-            <div class="request-services three"  style="transform: translateX(200%);">
+          <div class="req-slider">
+            <div class="request-services one"  style="transform: translateX(0%);">
               <div class="columns">
                 <div class="col-1 col">
-                  <p>/07</p>
+                  <p>/01</p>
                   <div class="col-img">
                     <img src="image\undrawGoingUp.png" alt="img">
                   </div>
-                  <h2>Cisco Servicing</h2>
-                  <p>Cisco helps enterprises connect and monitor devices, secure and automate operations, and compute and manage data Explore Cisco IoT.</p>
+                  <h2>Active Directory</h2>
+                  <p>Active Directory (AD) is a database and set of services that connect users
+                    with the network resources they need to get their work done.</p>
                 </div>
                 <!-- col-2 -->
                 <div class="col-2 col">
-                  <p>/08</p>
+                  <p>/02</p>
                   <div class="col-img">
                     <img src="image\undrawPerforma.png" alt="img">
                   </div>
-                  <h2>Fortinet Firewall</h2>
-                  <p>Fortinet is an American multinational headquartered in Sunnyvale, California. It designs and markets, among other things, software , equipment (appliances) and cybersecurity services.</p>
+                  <h2>Exchange Servicing</h2>
+                  <p>Exchange Service is a traditional marketing term used to refer to a service
+                    offered to end users which provides the end user
+                     with a telephonic connection.</p>
+                </div>
+                <!-- col-3 -->
+                <div class="col-3 col">
+                  <p>/03</p>
+                  <div class="col-img">
+                    <img src="image/undrawCloudHosting.png" alt="img">
+                  </div>
+                  <h2>Microsoft Azure</h2>
+                  <p>Azure's cloud service gives IT departments access to a large number of resources
+                     that they would not normally have with an on-premises data center.</p>
                 </div>
               </div>
               </div>
+              <!-- ////////////// -->
+              <div class="request-services two"  style="transform: translateX(100%);">
+                <div class="columns">
+                  <div class="col-1 col">
+                    <p>/04</p>
+                    <div class="col-img">
+                      <img src="image\undrawSlider.png" alt="img">
+                    </div>
+                    <h2>Private Cloud</h2>
+                    <p>One of the main benefits of deploying a private cloud is the increased degree of control afforded to the organization . Since the private cloud is only available to one company.</p>
+                  </div>
+                  <!-- col-2 -->
+                  <div class="col-2 col">
+                    <p>/05</p>
+                    <div class="col-img">
+                      <img src="image\undrawVisionary.png" alt="img">
+                    </div>
+                    <h2>Virtualization Hyper-v</h2>
+                    <p>VMware's Virtual Machine File System (VMFS) holds a slight edge when it comes to clustering. Hyper-V uses a single memory technique called “Dynamic Memory.” Using the dynamic memory settings.</p>
+                  </div>
+                  <!-- col-3 -->
+                  <div class="col-3 col">
+                    <p>/06</p>
+                    <div class="col-img">
+                      <img src="image/undraw.png" alt="img">
+                    </div>
+                    <h2>Sharepoint Servicing</h2>
+                    <p>Organizations use Microsoft SharePoint to create websites . You can use it as a secure place to store, organize, share, and access information from any device. All you need is a web browser.</p>
+                  </div>
+                </div>
+                </div>
+                <!-- //////////////// -->
+                <div class="request-services three"  style="transform: translateX(200%);">
+                  <div class="columns">
+                    <div class="col-1 col">
+                      <p>/07</p>
+                      <div class="col-img">
+                        <img src="image\undrawGoingUp.png" alt="img">
+                      </div>
+                      <h2>Cisco Servicing</h2>
+                      <p>Cisco helps enterprises connect and monitor devices, secure and automate operations, and compute and manage data Explore Cisco IoT.</p>
+                    </div>
+                    <!-- col-2 -->
+                    <div class="col-2 col">
+                      <p>/08</p>
+                      <div class="col-img">
+                        <img src="image\undrawPerforma.png" alt="img">
+                      </div>
+                      <h2>Fortinet Firewall</h2>
+                      <p>Fortinet is an American multinational headquartered in Sunnyvale, California. It designs and markets, among other things, software , equipment (appliances) and cybersecurity services.</p>
+                    </div>
+                  </div>
+                  </div>
+          </div>
       </div>
       <!-- contact me -->
       <div class="contact-me">
         <div class="contact-heading">
           <!-- experience section -->
           <div class="experience">
-            <h1>My experience</h1>
+            <p>My experience</p>
             <div class="paragraph">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -204,23 +206,8 @@
           </div>
           <!-- social media -->
           <div class="social">
-            <!-- row 1 -->
-            <div class="row">
-              <img class="row-img" src="leConsultantIcon.png" alt="img">
-              <h2>LeConsultant</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Ut enim ad minim veniam,
-                 <a class="row-link" href="https://www.linkedin.com/in/leconsultant/"><i class="lni lni-linkedin-original"></i></a></p>
-            </div>
-            <!-- row 2 -->
-            <div class="row">
-              <img class="row-img" src="image/walidLogo.png" alt="img">
-              <h2>Walid allan</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                 <a class="row-link" href="https://www.linkedin.com/in/walid-allan/"><i class="lni lni-linkedin-original"></i></a></p>
-            </div>
+            <p>Contact</p>
+            <h1>LET`S CHANGE THE GAME TOGETHER</h1>
           </div>
           <!-- info section -->
         <div class="info" id="footer">
@@ -236,32 +223,67 @@
         </div>
       </div>
       <!-- footer -->
-      <footer class="footer">
-        <!-- <div class="footer-logo">
-          <i class="lni lni-consulting-2"></i>
-          <h2>LeConsultant</h2>
-        </div>
-        <div class="scrolle-btn">
-          <button class="scrolle" type="button" name="button"><i class="lni lni-chevron-up"></i></button>
-        </div>
-          <div class="social-media">
-            <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
-            <i class="lni lni-linkedin-original"></i>
-          </div> -->
-          <!-- scrolle btn -->
-          <div class="scrolle-btn">
-            <button class="scrolle" type="button" name="button"><i class="lni lni-chevron-up"></i></button>
+      <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>LeConsultant</h3>
+
+				<p class="footer-links">
+					<a class="a-link" href="#home">Home</a>
+
+					<a class="a-link" href="#Aboutme">About</a>
+
+					<a class="a-link" href="#Service">Services</a>
+
+					<a class="a-link" href="#footer">Footer</a>
+				</p>
+        <!-- copy-right dynamic date -->
+        <div class="footer-company-name">
+          <!-- set dynamic date -->
+            <script type="text/javascript">
+              const getDate = new Date().getFullYear();
+              document.write('Emad Allane Copyright &copy '+ getDate)
+            </script>
           </div>
-          <!-- copy-right dynamic date -->
-            <div class="copyright">
-              <!-- set dynamic date -->
-              <script type="text/javascript">
-                const getDate = new Date().getFullYear();
-                document.write('Emad Allane CopyRight &copy '+ getDate)
-              </script>
-            </div>
-            <!-- <p class="copyright">Walid Allan copyright © 2022</p> -->
-      </footer>
+				<!-- <p class="footer-company-name">Company Name © 2015</p> -->
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="lni lni-map-marker"></i>
+					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+				</div>
+
+				<div>
+					<i class="lni lni-phone"></i>
+					<p>+1.555.555.5555</p>
+				</div>
+
+				<div>
+					<i class="lni lni-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+					<a href="#"><i class="lni lni-envelope"></i></a>
+					<a href="https://www.linkedin.com/in/leconsultant/"><i class="lni lni-linkedin-original"></i></a>
+					<a href="https://github.com/WALID26149"><i class="lni lni-github-original"></i></a>
+				</div>
+
+			</div>
+
+		</footer>
     </div>
     <!-- js script link -->
     <script defer src="index.js" charset="utf-8"></script>
